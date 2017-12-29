@@ -20,8 +20,9 @@ pubnub.subscribe({
   channels: [TICKER_CHANNEL]
 });
 
-console.log("--- order process starts 20 sec later ---");
+console.log("--- order process starts 60 sec later ---");
 
 setInterval(function() {
+  console.log("===== New Round Trading =====");
   logic.trade();
-}, 1000 * 20);
+}, 1000 * 60);
